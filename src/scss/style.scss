@@ -1,0 +1,16 @@
+@import './fonts';
+@import './variables';
+
+@import './blocks/page';
+  @import './blocks/globals';
+  @import './blocks/header';
+  @import './blocks/burger';
+  @import './blocks/main';
+  @import './blocks/brands';
+  @import './blocks/services';
+  @import './blocks/prices';
+  @import './blocks/modal';
+  @import './blocks/footer';
+
+
+// If you need to import Swiper CSS, use a relative path or a proper import in JS.

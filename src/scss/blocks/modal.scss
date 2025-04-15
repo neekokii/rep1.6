@@ -1,0 +1,114 @@
+.modal {
+  &__dialog {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    height: 100vh;
+    max-width: 440px;
+    background-color: #fff;
+    @media (min-width: $screen-xs) {
+      right: initial;
+      max-width: 100vw;
+    }
+    @media (min-width: $screen-sm) {
+      right: -1px;
+    }
+    &--space {
+      padding: 40px 32px;
+      box-shadow: 16px 0px 52px 0 #0e1850, 0 0 0 100vw #fffffff2;
+      filter: initial;
+      &::before {
+        content: '';
+        width: 1px;
+        height: 100vh;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: #d9fff5;
+        z-index: 1001;
+      }
+      @media (min-width: $screen-xs) {
+        padding: 22px 14px;
+      }
+      @media (min-width: $screen-xl) {
+        padding: 22px 32px;
+      }
+    }
+  }
+  &--hide {
+    visibility: hidden;
+  }
+  &__headline {
+    font-weight: 700;
+    font-size: 1.7143rem;
+    line-height: 2.2857rem;
+    letter-spacing: -0.6px;
+    color: $text-color;
+    @media (min-width: $screen-xs) {
+      margin: 40px 0 20px;
+      font-size: 1.5rem;
+    }
+    @media (min-width: $screen-xl) {
+      margin: 15px 3px 20px;
+    }
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: $screen-xs) {
+      width: 292px;
+    }
+    @media (min-width: $screen-xl) {
+      width: 380px;
+    }
+  }
+  &__input {
+    border-radius: 8px;
+    font-weight: 500;
+    color: $text-color--input;
+    font-size: 1.1429rem;
+    line-height: 1.7143rem;
+    letter-spacing: -0.2px;
+    padding: 12px 16px;
+    border: solid 1px $color-border;
+    &:not(:last-child) {
+      margin-bottom: 16px;
+      @media (min-width: $screen-xs) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  &__link {
+    color: $color-main;
+    font-size: 1rem;
+    line-height: 1.1429rem;
+    letter-spacing: 0;
+  }
+  &__privacy-policy {
+    font-size: 0.875rem;
+    line-height: 16px;
+    letter-spacing: 0;
+    @media (min-width: $screen-xl) {
+      font-size: 1rem;
+      margin: 18px 4px;
+    }
+  }
+  &__send-btn {
+    align-self: end;
+    @media (min-width: $screen-xs) {
+      font-size: 0.75rem;
+      letter-spacing: -0.15px;
+    }
+  }
+  &__close-btn {
+    display: inline-block;
+    width: fit-content;
+    @media (min-width: $screen-xl) {
+      position: absolute;
+      top: 32px;
+      left: -78px;
+    }
+  }
+}

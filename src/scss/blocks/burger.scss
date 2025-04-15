@@ -1,0 +1,145 @@
+/* Burger menu */
+
+.burger-menu {
+  &--aside {
+    flex-direction: column;
+
+    justify-content: space-between;
+    box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2),
+      -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+    background-color: #fff;
+    @media (min-width: $screen-xs) {
+      position: absolute;
+      display: flex;
+      z-index: 1000;
+      width: 100vw;
+      height: 100vh;
+    }
+    @media (min-width: $screen-md) {
+      left: 0;
+      width: 320px;
+    }
+    @media (min-width: $screen-xl) {
+      position: relative;
+      width: 306px;
+      height: initial;
+    }
+  }
+  &--hide {
+    display: none;
+  }
+  &__body {
+    flex-grow: 1;
+    @media (min-width: $screen-md) {
+      margin-top: 26px;
+    }
+    @media (min-width: $screen-xl) {
+      margin-top: 6px;
+    }
+  }
+  &__close-btn {
+    @media (min-width: $screen-xl) {
+      display: none;
+    }
+  }
+  &__logo {
+    visibility: visible;
+    margin: 2px 0 0 0;
+    &:before {
+      display: none;
+    }
+    @media (min-width: $screen-xs) {
+      margin: 2px 0 0 10px;
+    }
+    @media (min-width: $screen-xl) {
+      margin: 5px 0 0 0;
+    }
+  }
+  &__nav-list {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 24px;
+    @media (min-width: $screen-xs) {
+      gap: 24.9px;
+      padding: 0 16px;
+    }
+    @media (min-width: $screen-md) {
+      gap: 32.3px;
+      padding: 0 23px;
+    }
+    @media (min-width: $screen-xl) {
+      gap: 25.3px;
+    }
+    &--languages {
+      flex-direction: row;
+      padding: 30px 0 32px;
+      gap: 7px;
+      @media (min-width: $screen-xs) {
+        padding: 0;
+      }
+      @media (min-width: $screen-md) {
+        transform: translateY(30px);
+      }
+      @media (min-width: $screen-xl) {
+        padding: 0;
+        transform: translateY(18px);
+      }
+    }
+  }
+  &__footer {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: $screen-xs) {
+      flex-grow: 90;
+      gap: 12px;
+      padding: 24px 16px 0;
+    }
+    @media (min-width: $screen-md) {
+      justify-content: end;
+      padding: 24px 24px 62px;
+    }
+    @media (min-width: $screen-xl) {
+      display: flex;
+      justify-content: flex-start;
+      flex-grow: 4;
+      padding: 0px 20px 53px;
+    }
+  }
+}
+
+.header__container--burger-menu {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  right: initial;
+  top: initial;
+  border-bottom: none;
+  padding: 30px 22px;
+  @media (min-width: $screen-xs) {
+    padding: 18px 10px;
+  }
+  @media (min-width: $screen-md) {
+    padding: 18px 17px;
+  }
+  @media (min-width: $screen-xl) {
+    padding: 26px 22px;
+  }
+}
+
+.header__left-col--burger-menu {
+  visibility: visible;
+}
+
+.links-list--burger-menu {
+  gap: 16px;
+}
+
+.link--burger-menu-tel {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.6px;
+  @media (min-width: $screen-xs) {
+    font-size: 1.5rem;
+  }
+}
