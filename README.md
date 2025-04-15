@@ -1,3 +1,4 @@
+https://neekokii.github.io/rep1.6/
 # Webpack Static Site Starter Kit
 {
         test: /\.css$/,
